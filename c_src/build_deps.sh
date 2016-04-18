@@ -56,7 +56,7 @@ case "$1" in
 
     get-deps)
         if [ ! -d leveldb ]; then
-            git clone git://github.com/basho/leveldb
+            git clone git://github.com/tkanerva/leveldb
             (cd leveldb && git checkout $LEVELDB_VSN)
             if [ "$BASHO_EE" = "1" ]; then
                 (cd leveldb && git submodule update --init)
